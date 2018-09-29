@@ -1,0 +1,7 @@
+{
+  "logstashUrl": "http://logstash:9080",
+  "listenPort": 3050,
+  "index": "logstash-%Y.%m.%d",
+  "type": "browser",
+  "routeName": "/log"
+}
