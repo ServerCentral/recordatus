@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/611996/46250926-2341cf80-c40b-11e8-8320-cceb947dd3d3.png)
 
-recordatus creates an endpoint `/log` that ingests logs/metrics from your web app and sends to a specified logstash instance.
+recordatus listens with an endpoint `/log` that ingests logs/metrics from your web app and sends to a specified logstash instance.
 
 ## Configuration
 
@@ -49,7 +49,7 @@ recordatus should now be listening on the specified port, ready for browsers to 
 
 `PUT /log`
 
-Send a JSON object to this endpoint, with any data from your web app. It will get sent to the the logstash index and type specified in the config.
+Send a JSON _array of objects_ to this endpoint. The objects can be in any format you choose depending on your application. It will get sent to the the logstash index and type specified in the config.
 
 ## Example logstash configuration
 
