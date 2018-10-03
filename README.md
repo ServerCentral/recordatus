@@ -1,6 +1,6 @@
 # recordatus
 
-![](https://user-images.githubusercontent.com/611996/46250926-2341cf80-c40b-11e8-8320-cceb947dd3d3.png)
+![](https://user-images.githubusercontent.com/611996/46426209-7a91b980-c703-11e8-8ebb-3405016d7b2c.png)
 
 recordatus listens with an endpoint `/log` that ingests logs/metrics from your web app and sends to a specified logstash instance.
 
