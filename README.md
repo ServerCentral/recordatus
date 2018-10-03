@@ -18,7 +18,7 @@ This is your logstash instance running something like the example pipeline confi
 
 This is the port recordatus listens on.
 
-`"index": "logstash-%Y.%m.%d"`
+`"index": "browser-%Y.%m.%d"`
 
 This is the index recordatus will write data to. strftime format is supported.
 
