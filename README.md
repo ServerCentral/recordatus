@@ -40,7 +40,7 @@ docker run -v ${PWD}/config.json:/home/node/app/config.json -it -p 3050:3050 ser
 
 Note the port in this invocation must match the listenPort in your config.
 
-### Manual run
+### Manual
 
 ```
 npm install
