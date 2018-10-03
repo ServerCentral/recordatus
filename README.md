@@ -4,6 +4,10 @@
 
 recordatus listens with an endpoint `/log` that ingests logs/metrics from your web app and sends to a specified logstash instance.
 
+The data sent to recordatus can be in any format you choose, depending on your application and configuration.
+
+Send data to recordatus with tools like [browser-bunyan](https://github.com/philmander/browser-bunyan), [StrackTrace.js](https://github.com/stacktracejs/stacktrace.js/), or anything that can PUT/POST JSON.
+
 ## Configuration
 
 `"logstashUrl": "http://logstash:9080"`
@@ -47,9 +51,9 @@ recordatus should now be listening on the specified port, ready for browsers to 
 
 ## API
 
-`PUT /log`
+`[PUT, POST] /log`
 
-Send a JSON _array of objects_ to this endpoint. The objects can be in any format you choose depending on your application. It will get sent to the the logstash index and type specified in the config.
+Send a JSON object, or array of objects, to this endpoint. The objects can be in any structure you choose, depending on your needs. They will get sent to the the logstash index and type specified in the config.
 
 ## Example logstash configuration
 
